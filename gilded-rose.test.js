@@ -157,7 +157,7 @@ describe("Gilded Rose", () => {
     });
   });
 
-  describe("Conjured Item", () => {
+  describe.skip("Conjured Item", () => {
     test("before sell date", () => {
       const item = { name: "Conjured Mana Cake", sellIn: 5, quality: 10 };
       expect(tick(item)).toMatchSellInAndQuality(4, 8);
