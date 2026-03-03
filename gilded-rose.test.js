@@ -2,9 +2,9 @@ const tick = require("./");
 
 expect.extend({
   toMatchSellInAndQuality(received, sellIn, quality) {
-    const recievedValues = `[sellIn: ${received.sellIn}, quality: ${received.quality}]`;
+    const receivedValues = `[sellIn: ${received.sellIn}, quality: ${received.quality}]`;
     const expectedValues = `[sellIn: ${sellIn}, quality: ${quality}]`;
-    const valuesComparison = `\n  Received ${recievedValues}\n  Expected ${expectedValues}`;
+    const valuesComparison = `\n  Received ${receivedValues}\n  Expected ${expectedValues}`;
     if (received.sellIn == sellIn && received.quality == quality) {
       return {
         pass: true,
