@@ -5,7 +5,7 @@ expect.extend({
     const receivedValues = `[sellIn: ${received.sellIn}, quality: ${received.quality}]`;
     const expectedValues = `[sellIn: ${sellIn}, quality: ${quality}]`;
     const valuesComparison = `\n  Received ${receivedValues}\n  Expected ${expectedValues}`;
-    if (received.sellIn == sellIn && received.quality == quality) {
+    if (received.sellIn === sellIn && received.quality === quality) {
       return {
         pass: true,
         message: () => `expected values not to match:${valuesComparison}`
